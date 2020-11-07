@@ -16,8 +16,11 @@ class CalculatorTest_AssertAll {
     @Test
     void addtest(){
         int addtest01 = Calculator.add(4,2);
+        System.out.println("addtest01 = " + addtest01);
         int addtest02 = Calculator.add(5,2);
+        System.out.println("addtest02 = " + addtest02);
         int addtest03 = Calculator.add(6,2);
+        System.out.println("addtest03 = " + addtest03);
         assertAll("计算结果",
                 ()-> assertEquals(6,addtest01),
                 ()-> assertEquals(6,addtest02),
